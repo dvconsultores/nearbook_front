@@ -1,0 +1,82 @@
+// @forward "base";
+// @forward "default-settings";
+// @forward "mixins";
+// @forward "personal-classes";
+// @forward "responsive";
+// @forward "variables";
+// @use "mixins" as *;
+// @use "variables" as *;
+@import "base";
+@import "default-settings";
+@import "mixins";
+@import "personal-classes";
+@import "responsive";
+@import "variables";
+
+
+
+///////////////////// global ///////////////////////
+//- titulos -//
+.subtitles-comunes{
+  --c: #6968AC; 
+  --fw: 600;  
+  font-size: var(--step-em-2) !important;
+  line-height: 314.7% !important;
+  @media(max-width: 960px){
+    line-height: 160% !important;
+  }
+}
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  div:first-of-type {
+      display: flex;
+      .v-icon {
+          position: relative;
+          top: -20px;
+      }
+  }
+
+  div+div {    
+      .v-btn {        
+          .v-icon {
+              color: var(--primary)
+          }
+      }
+  }  
+}
+
+
+//- close -//
+.close {
+  --top: 0;
+  --right: 0;
+  position: absolute;
+  top: var(--top);
+  right: var(--right);
+}
+.clr-morado{
+  --c: #6968AC; 
+  --fw: 600;     
+}
+.parrafo{
+  font-weight: 300;
+  color: var(--clr) !important;
+  line-height: 120% !important;
+}
+.subtitulos{
+  font-weight: 600;  
+}
+.espaciado{
+  line-height: 314.7% !important;
+  @media(max-width: 960px){
+    line-height: 160% !important;
+  }
+}
+.clr-rosa{
+  --c: #D167A7; 
+  --fw: 600;
+}
+
+

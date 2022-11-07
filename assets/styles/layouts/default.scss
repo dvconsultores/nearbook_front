@@ -1,0 +1,19 @@
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // /
+// // // layout // // // 
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // /
+#layout {
+  background-color: white;
+  @include media(max, small) {background-color: white;};
+  background-size: cover;
+  // overflow: hidden;
+  //- responsive font size -//
+  .v-main {
+    & > * {@include media(max,small) {font-size: clamp(10px, 1.5vw, 12px)}}
+  }
+  // footer margin modifiable
+  & .with {
+    padding-block: 120px 18.4375em !important;
+    @include media(max, small) {padding-bottom: 19.5625em !important}
+  }
+  & .without {padding-block: 120px 0 !important}
+}
