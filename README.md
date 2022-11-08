@@ -1,4 +1,4 @@
-# detextre4-nuxt3
+# Nearbook Front Repo
 
 ## Build Setup
 
